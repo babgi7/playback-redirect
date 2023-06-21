@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script>
+    function redirectToAppStore() {
+      if (/(iPhone|iPod|iPad)/i.test(navigator.userAgent)) {
+        window.location.href = 'https://apps.apple.com/app/id1521820615';
+      } else if (/Android/i.test(navigator.userAgent)) {
+        window.location.href = 'https://play.google.com/store/apps/details?id=sa.com.baj.aljaziracorp
+https://appgallery.huawei.com/app/C103704699';
+      } else {
+        console.log('Unsupported device. Unable to redirect to app store.');
+      }
+    }
+
+    window.onload = function() {
+      redirectToAppStore();
+    };
+  </script>
+</head>
+<body>
+  <p>loading...</p>
+</body>
+</html>
