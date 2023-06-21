@@ -3,18 +3,18 @@
 <head>
   <title></title>
   <script>
-    function redirectToAppStore() {
+   function redirectToAppStore() {
   // Check if the user is using an iOS device (iPhone, iPod Touch, iPad)
   if (/(iPhone|iPod|iPad)/i.test(navigator.userAgent)) {
-    window.location.href = 'https://apps.apple.com/app/id1521820615';
+    window.location.assign('itms-apps://itunes.apple.com/app/id1521820615');
   }
   // Check if the user is using an Android device
   else if (/Android/i.test(navigator.userAgent)) {
     // Check if the device is a Huawei device
     if (/huawei/i.test(navigator.userAgent)) {
-      window.location.href = 'https://appgallery.huawei.com/app/C103704699';
+      window.location.assign('appgallery://app/C103704699');
     } else {
-      window.location.href = 'https://play.google.com/store/apps/details?id=sa.com.baj.aljaziracorp';
+      window.location.assign('market://details?id=sa.com.baj.aljaziracorp');
     }
   }
   // Fallback redirection or other device detection logic
@@ -23,6 +23,7 @@
     console.log('Unsupported device. Unable to redirect to app store.');
   }
 }
+
 
 
     window.onload = function() {
