@@ -10,7 +10,7 @@
   }
   // Check if the user is using an Android device
   else if (/Android/i.test(navigator.userAgent)) {
-      window.location.assign('market://details?id=sa.com.baj.aljaziracorp');
+      window.location.href = 'intent://play.google.com/store/apps/details?id=com.sa.baj.aljazirasmart&hl=en_US&gl=US#Intent;scheme=https;package=com.android.vending;end';
   }
   // Fallback redirection or other device detection logic
   else {
